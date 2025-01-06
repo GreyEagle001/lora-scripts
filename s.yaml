@@ -1,0 +1,16 @@
+edition: 1.0.0
+name: my-fc-project
+access: default
+
+services:
+  my-service:
+    component: fc
+    props:
+      region: cn-hangzhou
+      service:
+        name: my-service
+      function:
+        name: my-function
+        runtime: python3.10
+        handler: index.handler
+        codeUri: ./code 
