@@ -1,16 +1,13 @@
 edition: 1.0.0
-name: my-fc-project
+name: surge-config
 access: default
-
 services:
-  my-service:
+  fc-deploy:
     component: fc
     props:
-      region: cn-hangzhou
+      region: cn-hangzhou 
       service:
-        name: my-service
+        name: wildservice 
       function:
-        name: my-function
-        runtime: python3.10
-        handler: index.handler
-        codeUri: ./code 
+        name: surge-config 
+        codeUri: ./
