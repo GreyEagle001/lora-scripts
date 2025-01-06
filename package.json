@@ -1,0 +1,22 @@
+{
+  "name": "ubuntu-python-project",
+  "version": "1.0.0",
+  "description": "A project configured for Ubuntu 22.04 and Python 3.10",
+  "main": "index.js",
+  "scripts": {
+    "setup-env": "bash scripts/setup_env.sh",
+    "start-python": "python3 main.py",
+    "lint": "flake8 src/"
+  },
+  "dependencies": {
+    "shelljs": "^0.8.5"
+  },
+  "devDependencies": {
+    "eslint": "^8.50.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}
